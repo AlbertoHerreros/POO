@@ -18,7 +18,7 @@ Temazo::Temazo(){
      _nombreUltimoGarito="";
      _fechaUltimoUso=Fecha();
      _idTemazo=_numTemazos;
-    numTemazos++;   
+    _numTemazos++;   
 }
 -------------------------------------------------------------------------------------------------------------------------------------
 Ejemplo: numTemazos es una variable de clase que contará el nº que determinará el orden de creación, asi como puede ser usado
