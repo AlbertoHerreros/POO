@@ -1,0 +1,98 @@
+//Garito.h
+
+class Garito {
+public:
+
+    Garito();
+    Garito(string nombre, string direccion);
+    Garito(const Garito& orig);			//CONSTRUCTORES, DESTRUCTORES Y GETTERS/SETTERS
+    virtual ~Garito();				EN PUBLIC
+    	
+    void SetDireccion(string direccion);
+    string GetDireccion() const;
+    void SetNombre(string nombre);
+    string GetNombre() const;
+    
+private:
+    string _nombre;	//DECLARAMOS LAS VARIABLES EN PRIVATE
+    string _direccion;  //
+};
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+//Garito.cpp
+
+//Constructor por defecto
+
+Garito::Garito() {
+}
+
+//El constructor por defecto se instancia de este modo, en caso de que queramos que el constructor
+por defecto asigne valores por defecto a las variables del objeto, es necesario realizar tres pasos:
+
+ 1.- Garito(); pasará a ser Garito()=default;
+ 2.- En las variables habrá que asignar un valor por defecto: string _nombre=" ";
+ 3.- Borrar de Garito.cpp el constructor por defecto
+
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+//Constructor parametrizado
+
+Garito::Garito(string nombre, string direccion):
+_nombre(nombre),_direccion(direccion){
+    
+}
+
+//Si queremos usar este constructor como uno por defecto, debemos de asignar en el .h los valores de cada 
+variable en el caso de que no se le pasase. Además es importante tener en cuenta que si queremos hacer esto,
+solo funcionará si las variables con valores por defecto están a la derecha.
+
+	//en .h 
+		Garito(string nombre, string direccion="Dirección por defecto");
+
+		Si declaramos en main.cpp un objeto:
+			Garito* g1=new Garito("Nombre de garito");
+
+			Los datos del objeto serán:
+				nombre: Nombre de garito
+				direccion: Dirección por defecto
+
+	/*
+	Los que declaremos por defecto estarán en la parte derecha del constructor parametrizado
+
+	no podremos hacer así : Garito(string nombre="Nombre por defecto", string direccion);	
+
+	pero si así: Garito(string nombre="Nombre por defecto", string direccion="Dirección por defecto");
+	
+
+
+												*/
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+//Constructor copia
+
+Garito::Garito(const Garito& orig)
+:_nombre(orig._nombre),_direccion(orig._direccion){
+}
+
+//Cada dato se copia según esté en el original
+
+
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+//Destructor de clase
+
+Garito::~Garito() {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
