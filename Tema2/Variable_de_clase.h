@@ -21,6 +21,6 @@ Temazo::Temazo(){
     _numTemazos++;   
 }
 -------------------------------------------------------------------------------------------------------------------------------------
-Ejemplo: numTemazos es una variable de clase que contará el nº que determinará el orden de creación, asi como puede ser usado
+Ejemplo: _numTemazos es una variable de clase que contará el nº que determinará el orden de creación, asi como puede ser usado
 para identificar temazos
 
