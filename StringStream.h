@@ -16,7 +16,7 @@ std::string Clase::toCSV(){
 
 //.h
 
-void fromCSV( std::string& datos );
+void fromCSV( std::string& datos );      ///< Función que asigna los datos de un objeto a través de un texto en formato CSV
 
 //.cpp
 
