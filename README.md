@@ -1,4 +1,3 @@
 # POO
-Fragmentos de código
 
-EJEMPLOS DE LOS MÉTODOS Y FUNCIONES NECESARIOS PARA LA PROGRAMACIÓN ORIENTADA A OBJETOS EN C++
+Ejemplos para la realización de ejercicios para la asignatura de programación orientada a objetos
