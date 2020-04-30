@@ -17,7 +17,7 @@ Temazo::Temazo(){
      _puntuacion=0;
      _nombreUltimoGarito="";
      _fechaUltimoUso=Fecha();
-     _idTemazo=numTemazos;
+     _idTemazo=_numTemazos;
     numTemazos++;   
 }
 -------------------------------------------------------------------------------------------------------------------------------------
