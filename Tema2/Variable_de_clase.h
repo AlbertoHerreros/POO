@@ -1,4 +1,5 @@
-static <tipo> dato=;
+static <tipo> dato;
+<tipo> Clase::dato=;
 
 variable de clase que siempre tendrá el valor que se le vaya asignando
 
