@@ -21,7 +21,7 @@ Clase2* Clase1::funcion( std::string nombre ){
 /*
 Es el tipo de relación más débil, se basa en el uso de una clase por parte de otra y se hace de
 forma circunstancial a lo largo de la vida de los objetos que intervienen.
-Por lo general solo requiere de atributos y métodos públicos.
+Por lo general solo requiere del uso de atributos y métodos públicos.
 A nivel de implementación puede indicar:
   -Paso de objeto como argumento a un método del otro objeto.
   -El uso de objeto local dentro de la implementación de un método de otra clase.
