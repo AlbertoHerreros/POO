@@ -53,14 +53,3 @@ B& B::operator= (const B& orig){
   }
  return *this;
 }
-
-
-
-
-
-
-
-
-
-
-
