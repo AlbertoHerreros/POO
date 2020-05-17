@@ -31,7 +31,8 @@ private:
     string _nombre="";
     string _direccion="";
 };
-
+//---------------------------------------------------------------------------------------------------------------------------------------
 //main.cpp
-
+Garito garito("NombreGarito");
+Garito garito("NombreGarito","Dirección);
 Garito* g= new Garito("NombreGarito"); ///< Creará un garito ("NombreGarito","Direccion");
