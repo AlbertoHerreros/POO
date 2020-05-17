@@ -34,5 +34,7 @@ private:
 //Garito.cpp
 
 //Se suprime el constructor en .cpp
-
-
+//---------------------------------------------------------------------------------------------------------------------------------------
+//main.cpp
+Garito garito;
+Garito garitos[5];
