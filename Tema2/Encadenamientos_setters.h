@@ -28,3 +28,10 @@ Piloto& Piloto::setNombre( std::string nombre ){
   this->_nombre = nombre;
   return( *this);       /// Necesario devolver su referencia
 }
+
+
+//main.cpp
+
+p.setX()
+   .setY()
+   .setZ();
