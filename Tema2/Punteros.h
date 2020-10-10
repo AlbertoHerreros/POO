@@ -8,6 +8,9 @@ for(int i=0;i<10;i++){
         v[i]=new Clase();//Inicializar vector dinámico
 }
 
+///----------------------------------------
+//DESTRUCTOR DE CLASE
+
 for(int i=0;i<10;i++){
         if( v[i]!=nullptr ){
             delete v[i];
