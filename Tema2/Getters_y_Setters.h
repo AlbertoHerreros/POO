@@ -1,33 +1,44 @@
 //.h
 public:
-	void SetDato(string dato);
-    	string GetDato() const;
+	void SetDato( std::string dato );
+    	std::string GetDato() const;
 private:
-	string _dato="";
+	std::string _dato="";
 
 //.cpp
 
-string Garito::GetDato() const{
+std::string Clase::GetDato() const{
     return _dato;
 }
 
-void Garito::SetDato(string dato){
-    this->_dato=dato;
+void Clase::SetDato( std::string dato ){
+    _dato = dato;
 }
 
----------------------------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------------------
 
 //EJEMPLO CON EXCEPCIONES
 
-string Garito::GetDireccion() const{
+std::string Clase::GetDireccion() const{
     return _direccion;
 }
-void Garito::SetDireccion(string direccion){
-    if(direccion==""){
-        throw string("La direccion introducida no puede ser un espacio en blanco");
+void Clase::SetDireccion( std::string direccion ){
+    if( direccion == "" ){
+        throw string("La dirección introducida no puede ser un espacio en blanco");
     }
     else{
-        this->_direccion=direccion;
+        _direccion = direccion;
     }
 }
+
+//---------------------------------------------------------------------------------------------------------------------------------------
+//main.cpp
+
+try{
+	Clase c;
+	c.SetDireccion("x");
+	
+}catch( const std::string &e ){
+	std::cerr << e << std::endl;
+	}
 
