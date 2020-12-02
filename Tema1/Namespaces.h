@@ -1,21 +1,22 @@
-#ifndef DJUTILS_H
-#define	DJUTILS_H
+#ifndef CLASENOMBRE_H
+#define	CLASENOMBRE_H
 
-namespace djutils{
+namespace clasenombre{
   
-  void funcion(<Clase>& clase);
+  void funcion(<Clase>& objeto);
   
 }
 
-#endif	/* DJUTILS_H */
+#endif	/* CLASENOMBRE_H */
 
-//.h
+//.cpp
 
-void djutils::funcion(<Clase>& clase){
+void djutils::funcion(<Clase>& objeto){
   ///< Código que realiza
 }
 
 //main.cpp
 
-#include "djutils.h"
-funcion(objeto tipo <Clase>);
+#include "clasenombre.h"
+<Clase> objeto1;
+funcion(objeto1);
