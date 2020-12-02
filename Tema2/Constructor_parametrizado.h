@@ -1,38 +1,50 @@
-#ifndef GARITO_H
-#define GARITO_H
+#ifndef CLASE_H
+#define CLASE_H
 
-class Garito {
+class Clase{
 public:
  
-    Garito(string nombre, string direccion);
+    Clase( std::string nombre, int num );
     
 private:
-    string _nombre="";
-    string _direccion="";
+    std::string _nombre = "";
+    int _num = 0;
 };
 
-#endif /* GARITO_H */
+#endif /* CLASE_H */
 
-//Garito.cpp
+//Clase.cpp
 
-#include "Garito.h"
+#include "Clase.h"
 
-Garito::Garito(nombre,direccion):
+Clase::Clase(nombre,direccion):
 _nombre(nombre),_direccion(direccion){
 }
-///----------------------------------------------------------------------------------------------------------------------------------------
+
+//main.cpp
+
+#include "Clase.h"
+Clase c("Alberto",19); //Crea un objeto de nombre Alberto y num 19
+//----------------------------------------------------------------------------------------------------------------------------------------
 //SEGUNDO MÉTODO PARA CONSTRUCTOR PARAMETRIZADO
-class Garito {
+//----------------------------------------------------------------------------------------------------------------------------------------
+class Clase{
 public:
  
-    Garito(string nombre, string direccion="Direccion");  ///< Asignar los valores directamente en el constructor, deberán 
-                                                          ///< ponerse de derecha a izquierda
+    Clase( std::string nombre, int num = 20 );  //Asignar los valores directamente en el constructor, deberán 
+                                                                     //ponerse de derecha a izquierda
 private:
-    string _nombre="";
-    string _direccion="";
+    std::string _nombre = "";
+    int _num = 0;
 };
-//---------------------------------------------------------------------------------------------------------------------------------------
+
+//Clase.cpp
+
+#include "Clase.h"
+
+Clase::Clase(nombre,direccion):
+_nombre(nombre),_direccion(direccion){
+}
+
 //main.cpp
-Garito garito("NombreGarito");
-Garito garito("NombreGarito","Dirección);
-Garito* g= new Garito("NombreGarito"); ///< Creará un garito ("NombreGarito","Direccion");
+Clase c("Alberto"); //Crea un objeto de nombre Alberto y de num 20
