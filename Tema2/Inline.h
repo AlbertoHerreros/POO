@@ -1,13 +1,33 @@
-.h solamente
+#ifndef CLASE_H
+#define CLASE_H
 
-Class A{
+class Clase{
 public:
-  inline int getVariable() const();
-  void addnum(){
-    ++this->variable;
-     };
+    Clase() = default;
+    void duplicar();
+    int getNum() const;
+private:
+    int _num = 1;
+    
 };
 
- inline int A::getVariable() const(){
-    return this->variable;
- }
+void Clase::duplicar(){
+    _num *= 2;
+}
+
+int Clase::getNum() const {
+    return _num;
+}
+
+#endif /* CLASE_H */
+
+//-----------------------------------------------------------
+//main.cpp
+
+#include "Clase.h"
+
+Clase c;
+c.duplicar;
+std::cout << c.getNum() << std::endl;
+
+//Se crea un objeto de tipo clase con valor 1, se duplica su valor y se muestra un 2
