@@ -1,32 +1,32 @@
-#ifndef GARITO_H
-#define GARITO_H
+#ifndef CLASE_H
+#define CLASE_H
 
-class Garito {
+class Clase{
 public:
     
-    Garito()=default;
-    Garito(const Garito& orig);
+    Clase()=default; //Constructor por defecto
+    Clase(const Clase& orig); //Constructor copia
 
 private:
     string _nombre="";
-    string _direccion="";
+    int _num=0;
 };
 
-#endif /* GARITO_H */
+#endif /* CLASE_H */
 
-//Garito.cpp
+//Clase.cpp
 
-#include "Garito.h"
+#include "Clase.h"
 
-Garito::Garito(const Garito& orig):
-_nombre(orig._nombre),_direccion(orig._direccion){
+Clase::Clase(const Clase& orig):
+_nombre(orig._nombre),_num(orig._num){
 }
 
 //main.cpp
 
-Garito g1;
-Garito g2 (g1);
-Garito g2=g1; ///< Si no existen operadores sobrecargados
+Clase c1;
+Clase c2(c1);
+Clase c2 = c1; //Si no existen operadores sobrecargados
 
-Garito* g1 = new Garito();
-Garito* g2 = g1; ///< Uso del constructor de copia, el objeto g2 será igual que el objeto g1
+Clase* c3 = new Clase();
+Clase* c4 = c3; //Uso del constructor de copia, el objeto g2 será igual que el objeto g1. Operator= no sobrecargado
