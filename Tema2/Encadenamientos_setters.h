@@ -1,37 +1,35 @@
-#ifndef PILOTO_H
-#define PILOTO_H
+#ifndef CLASE_H
+#define CLASE_H
 
-class Piloto
-{
+class Clase{
    private:
-      std::string _nombre;                ///< Nombre del Piloto
-      std::string _nacionalidad;          ///< Nacionalidad del Piloto
-      int _numMisiones = 0;        ///< Número de misiones en que ha participado
-      long _fechaUltimaMision = 0;        ///< Fecha estelar de su última misión
-      std::string _incidenciasUltimaMision; ///< Incidencias reportadas por el piloto en su última misión.
+      std::string _nombre;
+      std::string _nacionalidad;
       
    public:
 
-      Piloto& setNumMisiones ( int numMisiones );       /// Cambiamos el void por una referencia al propio objeto
-      Piloto& setNacionalidad ( std::string nacionalidad ); /// void -> Piloto&
-      Piloto& setNombre ( std::string nombre );
-      Piloto& setIncidenciasUltimaMision ( std::string incidenciasUltimaMision );
-      Piloto& setFechaUltimaMision ( long fechaUltimaMision );  
-          
+      Clase& setNombre ( std::string nombre );
+      Clase& setNacionalidad ( std::string nacionalidad );
+   
 };
 
-#endif /* PILOTO_H */
+#endif /* CLASE_H */
 
-//Piloto.cpp
+//Clase.cpp
 
-Piloto& Piloto::setNombre( std::string nombre ){
-  this->_nombre = nombre;
-  return( *this);       /// Necesario devolver su referencia
+Clase& Clase::setNombre( std::string nombre ){
+  _nombre = nombre;
+  return(*this);       /// Necesario devolver su referencia
 }
 
+Clase& Clase::setNacionalidad( std::string nacionalidad ){
+   _nacionalidad = nacionalidad;
+   return(*this);
+}
 
 //main.cpp
+#include "Clase.h"
 
-p.setX()
-   .setY()
-   .setZ();
+Clase c;
+c.setNombre("Alberto")
+   .setNacionalidad("Español");
