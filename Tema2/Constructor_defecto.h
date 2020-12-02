@@ -1,40 +1,40 @@
-#ifndef GARITO_H
-#define GARITO_H
+#ifndef CLASE_H
+#define CLASE_H
 
-class Garito {
+class Clase {
 public:
-    Garito();
+    Clase();
 
 private:
     std::string _nombre;
-    std::string _direccion;
+    int _num;
 };
 
-#endif /* GARITO_H */
+#endif /* CLASE_H */
 
-//Garito.cpp
-#include "Garito.h"
+//Clase.cpp
+#include "Clase.h"
 
-Garito::Garito(){
-    _nombre="";
-    _direccion="";
+Clase::Clase(){
+    _nombre = "";
+    _num = 0;
 }
 //----------------------------------------------------------------------------------------------------------------------------------------
-///< SEGUNDO MÉTODO PARA EL CONSTRUCTOR POR DEFECTO
+//SEGUNDO MÉTODO PARA EL CONSTRUCTOR POR DEFECTO
 
-class Garito {
+class Clase {
 public:
-    Garito()=default;               ///< Asignamos default -> Cogerá el valor de las variables inicializadas en su declaración
+    Clase()=default;               //Asignamos default -> Cogerá el valor de las variables inicializadas en su declaración
 
 private:
-    std::string _nombre="";         ///< Las variables vienen inicializadas
-    std::string _direccion="";
+    std::string _nombre = "";         //Las variables vienen inicializadas
+    int _num = 0;
 };
 
-//Garito.cpp
+//Clase.cpp
 
 //Se suprime el constructor en .cpp
 //---------------------------------------------------------------------------------------------------------------------------------------
 //main.cpp
-Garito garito;
-Garito garitos[5];
+Clase c1;
+Clase cvector[5];
