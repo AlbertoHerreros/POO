@@ -41,4 +41,6 @@ try{
 }catch( const std::string &e ){
 	std::cerr << e << std::endl;
 	}
-
+//-------------------------------------------------------------------------------------------------------------------------------
+// En netbeans existe creación automática -> seleccionas el nombre de la clase en clase.h -> click derecho -> refactor -> 
+// encapsulate fields -> marcas getters o setters que requieras
