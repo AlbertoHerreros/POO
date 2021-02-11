@@ -1,7 +1,14 @@
 #include <stdexcept>
 
-throw std::invalid_argument("");
+metodoCualquiera(){
+  throw std::invalid_argument("[clase.cpp/metodoCualquiera]: Argumento inválido");
+}
 
-catch (std::invalid_argument &e){
+//------------------------------------------------------------------------------
+//main.cpp
+
+try{
+  //FRAGMENTO DE CÓDIGO
+}catch (std::invalid_argument &e){
   std::cerr << " " << e.what();
 }
