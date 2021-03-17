@@ -15,3 +15,5 @@ template<class T>
 
 //Si usas esta plantilla para ordenar objetos, es necesario que tengas en cuenta sobrecargar los operadores para evitar fallos
 //.cpp no existe -> IMPLEMENTACIÓN EN CABECERA
+  
+//Desde el main -> nombreClase<tipo> objeto;
