@@ -1,5 +1,5 @@
 # POO
 
-Ejemplos para la realización de ejercicios para la asignatura de programación orientada a objetos
+Teoría: carpeta con ejemplos de código aprendidos durante el desarollo de la asignatura.
 
-Nota: aunque los archivos estén nombrados como .h contendrán su uso e implementación en .cpp e incluso main.cpp
+Prácticas: carpeta con los proyectos de prácticas resueltos.
